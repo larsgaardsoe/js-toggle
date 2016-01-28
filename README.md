@@ -1,5 +1,19 @@
 # js-toggle
-Javascript toggle class on click using data attributes
+Quick and dirty javascript for toggling classes on click using data attributes. Good for prototyping css animations. No need for jQuery.
+
+Support IE10+
+
+## How to use
+```html
+<button class="js-toggle" data-element="menu">Show/Hide menu</button>
+<nav id="menu">
+ ...
+</nav>
+´´´
+
+Click on button will add og remove the class "js-action" på <nav> 
+
+### Full script
 
 ```javascript
     function ready(event) {
