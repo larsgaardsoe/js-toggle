@@ -1,7 +1,7 @@
 # js-toggle
 Quick and dirty javascript for toggling classes on click using data attributes. Good for prototyping css animations. No need for jQuery.
 
-Support IE10+
+Support IE10+ (See https://developer.mozilla.org/en-US/docs/Web/API/Element/classList for info and polyfill)
 
 ## How to use
 ```html
@@ -11,9 +11,13 @@ Support IE10+
 </nav>
 ```
 
-Click on button will add og remove the class "js-action" på <nav> 
+Click on button will add or remove the class "js-action" på <nav>
 
-### Full script
+Use data-group="drawer" to remove "js-action" from other elements with class "drawer"
+
+Use .js-active-default and media queries if you need some element to active by default on some viewports and not others.
+
+## Full script
 
 ```javascript
     function ready(event) {
