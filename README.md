@@ -13,7 +13,7 @@ Support IE10+ (See https://developer.mozilla.org/en-US/docs/Web/API/Element/clas
 
 Click on button will add or remove `class="js-action"` på `<nav>`
 
-Use `data-group="drawer"` to remove `class="js-action"` from other elements with class "drawer"
+Use `data-group="drawer"` to remove `class="js-action"` from other elements with `class="drawer"`
 
 Use `.js-active-default` and media queries if you need some element to active by default on some viewports and not others.
 
