@@ -9,7 +9,7 @@ Support IE10+
 <nav id="menu">
  ...
 </nav>
-´´´
+```
 
 Click on button will add og remove the class "js-action" på <nav> 
 
