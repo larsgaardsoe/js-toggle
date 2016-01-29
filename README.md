@@ -1,8 +1,6 @@
 # js-toggle
 Quick and dirty javascript for toggling classes on click using data attributes. Good for prototyping css animations. No need for jQuery.
 
-Support IE10+ (See https://developer.mozilla.org/en-US/docs/Web/API/Element/classList for info and polyfill)
-
 ## How to use
 ```html
 <button class="js-toggle" data-element="menu">Show/Hide menu</button>
@@ -26,14 +24,15 @@ Use `.js-active-default` and media queries if you need some element to active by
           list[i].addEventListener(event, fn, false);
         }
       }
+
       function handleClick() {
         var dataElement = this.dataset.element;
         var group = document.getElementsByClassName(this.dataset.group);
         var element = document.getElementById(dataElement);
-        if (element.className.contains('js-active-default')) {
+        if (element.className === 'js-active-default') {
           element.classList.remove('js-active-default');
         } else {
-          if (!element.className.contains('js-active')) {
+          if (!element.className === 'js-active') {
             if (group) {
               Array.prototype.forEach.call(group, function(el) {
                 el.classList.remove('js-active');
