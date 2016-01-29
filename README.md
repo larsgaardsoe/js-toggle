@@ -9,9 +9,9 @@ Quick and dirty javascript for toggling classes on click using data attributes. 
 </nav>
 ```
 
-Click on button will add or remove `class="js-action"` på `<nav>`
+Click on button will add or remove `class="js-active"` på `<nav>`
 
-Use `data-group="drawer"` to remove `class="js-action"` from other elements with `class="drawer"`
+Use `data-group="drawer"` to remove `class="js-active"` from other elements with `class="drawer"`
 
 Use `.js-active-default` and media queries if you need some element to active by default on some viewports and not others.
 
