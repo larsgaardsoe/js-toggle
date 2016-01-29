@@ -1,18 +1,19 @@
-// Generic .js-toggle using data-element and data-group. Use .js-active-default if needed in responsive design
+    // Generic .js-toggle using data-element and data-group. Use .js-active-default if needed in responsive design
     function ready(event) {
       function addEventListenerList(list, event, fn) {
         for (var i = 0, len = list.length; i < len; i++) {
           list[i].addEventListener(event, fn, false);
         }
       }
+
       function handleClick() {
         var dataElement = this.dataset.element;
         var group = document.getElementsByClassName(this.dataset.group);
         var element = document.getElementById(dataElement);
-        if (element.className.contains('js-active-default')) {
+        if (element.className === 'js-active-default') {
           element.classList.remove('js-active-default');
         } else {
-          if (!element.className.contains('js-active')) {
+          if (!element.className === 'js-active') {
             if (group) {
               Array.prototype.forEach.call(group, function(el) {
                 el.classList.remove('js-active');
